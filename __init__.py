@@ -7,8 +7,11 @@
 """
 from trytond.pool import Pool
 
+from sale import SaleLine
+
 
 def register():
     Pool.register(
+        SaleLine,
         module='sale_line_warehouse', type_='model'
     )
